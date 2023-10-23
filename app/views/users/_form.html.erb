@@ -39,7 +39,7 @@
 
         <div class="d-flex justify-content-center">
           <div>
-            <%= f.submit "Sign Up", class: "btn btn-outline-secondary btn-lg" %>
+            <%= f.submit(@user.new_record? ? "Sign Up" : "Update account", class: "btn btn-outline-secondary btn-lg") %>
           </div>
         </div>
 
