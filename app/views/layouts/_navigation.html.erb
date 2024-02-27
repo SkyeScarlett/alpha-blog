@@ -30,6 +30,8 @@
                 <ul class="dropdown-menu">
                   <%= link_to "View profile", user_path(current_user), class: "dropdown-item" %>
                   <%= link_to "Edit profile", edit_user_path(current_user), class: "dropdown-item" %>
+                  <%= link_to "Delete profile", user_path(current_user), class: "dropdown-item text-danger", 
+                                                data: { "turbo-method": :delete, confirm: "Are you sure?" } %>
                 </ul>
             </li>
 
